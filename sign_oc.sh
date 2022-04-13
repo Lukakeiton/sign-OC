@@ -102,13 +102,14 @@ rm "OpenCore-${VERSION}-RELEASE.zip"
 echo "============================"
 echo "Signing drivers, tools, BOOTx64.efi and OpenCore.efi"
 echo ""
-sbsign --key ISK.key --cert ISK.pem --output ./Signed/BOOT/BOOTx64.efi ./Signed/Download/X64/EFI/BOOT/BOOTx64.efi
-sbsign --key ISK.key --cert ISK.pem --output ./Signed/OpenCore.efi ./Signed/Download/X64/EFI/OC/OpenCore.efi
-sbsign --key ISK.key --cert ISK.pem --output ./Signed/Drivers/OpenRuntime.efi ./Signed/Download/X64/EFI/OC/Drivers/OpenRuntime.efi
-sbsign --key ISK.key --cert ISK.pem --output ./Signed/Drivers/OpenCanopy.efi ./Signed/Download/X64/EFI/OC/Drivers/OpenCanopy.efi
-sbsign --key ISK.key --cert ISK.pem --output ./Signed/Drivers/CrScreenshotDxe.efi ./Signed/Download/X64/EFI/OC/Drivers/CrScreenshotDxe.efi
-sbsign --key ISK.key --cert ISK.pem --output ./Signed/Tools/OpenShell.efi ./Signed/Download/X64/EFI/OC/Tools/OpenShell.efi
-sbsign --key ISK.key --cert ISK.pem --output ./Signed/Drivers/HfsPlus.efi ./Signed/Download/HfsPlus.efi
+sbsign --key ISK.key --cert ISK.pem --output ./Signed/EFI/BOOT/BOOTx64.efi ./Signed/Download/X64/EFI/BOOT/BOOTx64.efi
+sbsign --key ISK.key --cert ISK.pem --output ./Signed/EFI/OC/OpenCore.efi ./Signed/Download/X64/EFI/OC/OpenCore.efi
+sbsign --key ISK.key --cert ISK.pem --output ./Signed/EFI/OC/Drivers/OpenRuntime.efi ./Signed/Download/X64/EFI/OC/Drivers/OpenRuntime.efi
+sbsign --key ISK.key --cert ISK.pem --output ./Signed/EFI/OC/Drivers/OpenCanopy.efi ./Signed/Download/X64/EFI/OC/Drivers/OpenCanopy.efi
+sbsign --key ISK.key --cert ISK.pem --output ./Signed/EFI/OC/Drivers/CrScreenshotDxe.efi ./Signed/Download/X64/EFI/OC/Drivers/CrScreenshotDxe.efi
+sbsign --key ISK.key --cert ISK.pem --output ./Signed/EFI/OC/Tools/OpenShell.efi ./Signed/Download/X64/EFI/OC/Tools/OpenShell.efi
+sbsign --key ISK.key --cert ISK.pem --output ./Signed/EFI/OC/Drivers/HfsPlus.efi ./Signed/Download/HfsPlus.efi
+sbsign --key ISK.key --cert ISK.pem --output ./Signed/EFI/OC/Drivers/AudioDxe.efi ./Signed/Download/X64/EFI/OC/Drivers/AudioDxe.efi
 
 
 if [ "$LUKA" = "$LUKA1" ] || [ "$LUKA" = "$LUKA2" ]; then
