@@ -12,4 +12,9 @@ He creado un script que automatiza el proceso unificando varios pasos:
 
 Este script sólo necesita como parámetro de entrada la versión de OpenCore con el siguiente formato X.Y.Z. Ejemplo: sh ./sign_oc.sh 0.7.6 crea una carpeta llamada oc en la carpeta de descargas de Windows con todos los archivos necesarios.
 
-Nota: para completar el artículo [OpenCore-and-UEFI-Secure-Boot](https://github.com/perez987/OpenCore-and-UEFI-Secure-Boot).
+Notas:
+- Para completar el artículo [OpenCore-and-UEFI-Secure-Boot](https://github.com/perez987/OpenCore-and-UEFI-Secure-Boot).
+- Para copiar el script al directorio de la máquina virtual:
+cp "/mnt/c/Users/YourWinNameUser/Downloads/sign_oc.sh" /home/YourUbuntuNameUser
+
+ 
